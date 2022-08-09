@@ -22,6 +22,7 @@ public class AppLoteria {
         nuevoSorteo.getFecha();
         System.out.println("Estado: "+nuevoSorteo.getEstado());
         nuevoSorteo.cambiarEstado();
+        nuevoSorteo.realizarSorteo();
     }
     
 }

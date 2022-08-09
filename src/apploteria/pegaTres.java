@@ -8,9 +8,11 @@ package apploteria;
  *
  * @author Developer
  */
+import java.util.Random;
+
 public class pegaTres extends Evento{
-    private int ganador[];
-    private int premios[];
+    private int ganador[] = new int[3];
+    private int premios[]={100,1000,100000};
     private int numeroSorteo;
 
     pegaTres(String fecha, int numeroSorteo){
@@ -19,7 +21,13 @@ public class pegaTres extends Evento{
     }
 
     public void realizarSorteo(){
-
+      Random rand = new Random();
+      int numeroMax = 100;
+        //generate random values from 0-99
+      for(int cont=0; cont<3; cont++){
+            ganador[cont] = rand.nextInt(numeroMax); 
+            System.out.println("Numero Ganador: " + ganador[cont]);
+        }
     }
 
     public void buscarGanadores(){

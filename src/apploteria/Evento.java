@@ -39,5 +39,6 @@ public abstract class  Evento {
     }   
 
     protected abstract void realizarSorteo();
+
     protected abstract void buscarGanadores();
 }
