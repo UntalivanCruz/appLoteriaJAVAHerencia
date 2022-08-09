@@ -9,8 +9,8 @@ package apploteria;
  * @author Developer
  */
 
-//CLASE PADRE
-public class Evento {
+//CLASE PADRE ABSTRACTA
+public abstract class  Evento {
     private String fecha;
     private boolean esRealizado;
 
@@ -37,4 +37,7 @@ public class Evento {
     protected boolean getEstado(){
         return this.esRealizado;
     }   
+
+    protected abstract void realizarSorteo();
+    protected abstract void buscarGanadores();
 }

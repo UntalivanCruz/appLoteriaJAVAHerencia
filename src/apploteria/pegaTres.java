@@ -17,4 +17,12 @@ public class pegaTres extends Evento{
         super(fecha);
         this.numeroSorteo = numeroSorteo;
     }
+
+    public void realizarSorteo(){
+
+    }
+
+    public void buscarGanadores(){
+
+    }
 }
